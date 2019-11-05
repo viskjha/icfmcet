@@ -1,8 +1,3 @@
-<?php
-session_start();
-require 'server/register.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,22 +52,6 @@ require 'server/register.php';
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="http://cet.edu.in/"><center> College of Engineering and<br> Technology, Bhubaneswar</center></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-	
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="speakers.html" class="nav-link">Speakers</a></li>
-					<li class="nav-item"><a href="eventalk/schedule.html" class="nav-link">Schedule</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
-	
-				</ul>
-			</div>
 		</div>
 	</nav>
     <!-- END nav -->
@@ -96,20 +75,33 @@ require 'server/register.php';
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5">
-          	<form method="POST" action="server/login.php" class="request-form ftco-animate">
+          	<form method="POST" action="" class="request-form ftco-animate">
 				<h3><span style="color: red;"><center>Important Dates</center></span></h3><hr>
-				Abstract Submission: November 05, 2019
-				(Abstract ~ 500 words, Arial Font 12)
-				Sent via-(e-mail:icfmsbrd@cet.edu.in)<hr>
-				Notification Acceptance: November 12-15, 2019<hr>
-				Full paper Submission: November 20, 2019<hr>
-				Registration Starts: November 28-30, 2019<hr>
-				Conference Dates: November 28-30, 2019		
-	    	</form>
-          </div>
+				<div style="height: 200px;">
+					<marquee behavior="scroll" direction="up" style="height: 200px;">
+						Abstract Submission: November 05, 2019
+						(Abstract ~ 500 words, Arial Font 12)<br>
+						Sent via-(e-mail:icfmsbrd@cet.edu.in)
+						<hr>
+						Notification Acceptance: November 12-15, 2019
+						<hr>
+						Full paper Submission: November 20, 2019
+						<hr>
+						Registration Starts: November 28-30, 2019
+						<hr>
+						Conference Dates: November 28-30, 2019
+					</marquee>
+				</div>		
+			</form><br>
+			<div class="request-form ftco-animate">
+				<div class="form-group">
+					<a href="https://forms.gle/FVLgtMrmp89Rj6XX6"><button class="btn btn-success">Register</button></a>
+				</div>
+			</div>
+		  </div>
         </div>
       </div>
-	</div><br><br><br>
+	</div><br><br>
 	
 
     <section class="ftco-section services-section bg-primary">
@@ -540,7 +532,7 @@ require 'server/register.php';
 								Applications are invited in the registration form from faculty members /researchers /students in the relevant areas like
 								Textile engineering, chemistry, physics, pharmacy, bioscience/ biotechnology etc. Participants are requested to send the
 								registration form with registration fee (through NET banking: “Convernor, ICFMS”, Syndicate Bank, CET Campus,
-								Bhubaneswar, India; Type of account: SB; Account No: 80172010011904; IFSC Code: SYNB0008017). Please note that the
+								Bhubaneswar, India;<br>Type of account: SB;<br>Account No: <b>80172010011904</b><br>IFSC Code: <b>SYNB0008017</b> )<br>Please note that the
 								participation fee includes kit materials, lunch and tea for all the days. Registration fee is waived for participants
 								from TEQIP-III institution.
 							</p>
@@ -561,7 +553,7 @@ require 'server/register.php';
 						<div>
 							<div class="text pl-4">
 								<h3>Prof. P. K. Patra</h3>
-								<span class="position">Principle</span>
+								<span class="position">Principal</span>
 								<p>College of Engineering & Technology, Bhubaneswar</p>
 							</div>
 						</div>
@@ -646,7 +638,7 @@ require 'server/register.php';
 					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
 						<div class="text pl-4">
 							<h3>Prof. B. K. Behera</h3>
-							<span class="position">IIT, Delh</span>
+							<span class="position">IIT, Delhi</span>
 						</div>
 					</div>
 					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
@@ -729,7 +721,7 @@ require 'server/register.php';
 	
 
 
-	<section class="ftco-section testimony-section ftco-no-pt">
+	<!-- <section class="ftco-section testimony-section ftco-no-pt">
 		<div class="container">
 			<div class="row justify-content-center mb-5">
 				<div class="col-md-7 text-center heading-section ftco-animate">
@@ -844,7 +836,7 @@ require 'server/register.php';
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
     <!-- <section class="ftco-section">
       <div class="container">
